@@ -63,17 +63,58 @@ player = createSprite(450, 270, 50, 50);
 
   background("orange");
   image(maze,20,-100,1200,900);
+  player.collide(wall1);
+  player.collide(wall2);
+  player.collide(wall3);
+  player.collide(wall4);
+  player.collide(wall5);
+  player.collide(wall6);
+  player.collide(wall7);
+  player.collide(wall8);
+  player.collide(wall9);
+  player.collide(wall10);
+  player.collide(wall11);
+  player.collide(wall12);
+  player.collide(wall13);
+  player.collide(wall14);
+  player.collide(wall15);
+  player.collide(wall16);
+  player.collide(wall17);
+  player.collide(wall18);
+  player.collide(wall19);
+  player.collide(wall20);
+  player.collide(wall21);
+  player.collide(wall22);
+  player.collide(wall23);
+  player.collide(wall24);
+  player.collide(wall25);
+  player.collide(wall26);
+  player.collide(wall27);
+  player.collide(wall28);
+  player.collide(wall29);
+  player.collide(wall30);
+  player.collide(wall31);
+  player.collide(wall32);
+  player.collide(wall33);
+  player.collide(wall34);
+  player.collide(wall35);
+  player.collide(wall36);
+  player.collide(wall37);
+  player.collide(wall38);
+  player.collide(wall39);
+  player.collide(wall40);
+  player.collide(wall41);
   if(keyDown("UP_ARROW")){
-    player.y =1.25;
+    player.y = player.y-3
   }  
   if(keyDown("DOWN_ARROW")){
-    player.y =-1.25;
+    player.y =player.y+3
   }  
   if(keyDown("RIGHT_ARROW")){
-    player.x =1.25;
+    player.x =player.x+3
   }  
   if(keyDown("LEFT_ARROW")){
-    player.x =-1.25;
+    player.x =player.x-3
   }  
   drawSprites();
 }
